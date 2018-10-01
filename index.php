@@ -36,7 +36,7 @@ if($method == 'POST'){
 			$response = json_decode($response, true); //because of true, it's in an array
 			$speech = "";
 			foreach($response['documents'] as $item) {
-				$speech .= $item['name']. '<br />';
+				$speech .= $item['name']. '/n';
 			}
 			break;
 
