@@ -34,7 +34,7 @@ if($method == 'POST'){
 			curl_close($curl);
 			
 			$response = json_decode($response, true); //because of true, it's in an array
-			$speech = ""
+			$speech = "";
 			foreach($response['documents'] as $item) {
 				$speech .= $item['name']. '<br />';
 			}
